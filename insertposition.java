@@ -1,7 +1,7 @@
 public class insertposition {
     public static void main(String[] args) {
-        int[] arr ={1,3,5,9,11,12,18};
-        int x =19;
+        int[] arr ={1,3};
+        int x =3;
         int low =0;
         int pos=-1;
         int high = arr.length-1;
@@ -21,17 +21,20 @@ public class insertposition {
                     high = mid-1;
                 }
                 else{
-                    pos=low+1;
+                    pos=low;
                     break;
                 }
             }
              if(x>arr[mid]){
                 if(arr[high]>x){
-                    pos=mid;
+                    pos=mid+1;
                     high--;
                     low=mid+1;
                 }
                 else{
+                    if(x==arr[high])
+                    pos=high;
+                    else
                     pos=high+1;
                     break;
                 }
