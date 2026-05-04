@@ -52,8 +52,8 @@ class Solution{
 // Driver class
 class SearchInRotatedArray {
     public static void main(String[] args) {
-        int[] nums = {4,0,1,2,3};
-        int target = 2;
+        int[] nums = {7, 8, 1, 2, 3, 3, 3, 4, 5, 6};
+        int target = 6;
 
         Solution obj = new Solution();
         int result = obj.search(nums, target);
