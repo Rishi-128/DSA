@@ -27,7 +27,7 @@ public class Sqrt {
     }
     public static void main(String[] args) {
         int n = 34;
-        System.out.println(Math.pow(n, 3));
+       
         System.out.println(Math.sqrt(n));
         System.out.println(Solution(n));
     }
